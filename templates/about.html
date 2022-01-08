@@ -1,0 +1,181 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <style>
+      body,
+      html {
+        height: 100%;
+        font-family: 'Roboto', sans-serif;
+        background-image: url("{% static 'images/b2.jpg'%}");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        
+      }
+      .main {
+        background-color: #212529 !important;
+        mix-blend-mode: hard-light !important;
+        font-family: "Roboto", sans-serif;
+        
+        
+      }
+      .about {
+        margin-top: 2rem;
+      }
+      .dataset {
+        font-family: "Roboto", sans-serif;
+        padding: 2rem;
+        
+        color: white;
+      }
+      .dataset1 {
+        font-family: "Roboto", sans-serif;
+        margin-top: 2rem;
+        color: white;
+      }
+      .dataset2 {
+        font-family: "Roboto", sans-serif;
+        margin-top: 2rem;
+        color: white;
+        
+      }
+      .dataset3 {
+        font-family: "Roboto", sans-serif;
+        margin-top: 2rem;
+        color: white;
+        
+      }
+      .img {
+        margin-top: 2rem;
+        box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5);
+      }
+      .hist {
+        margin-left: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    {% include 'nav.html' %}
+    <div class="main">
+      <div class="dataset">
+        <h3 style="font-family: 'Roboto', sans-serif;">Dataset Used : PIMA Indian Diabetes Dataset</h3>
+        <a
+          href="https://drive.google.com/file/d/10Kuzlh45r39uMKfpgo5dW4ZT0wf6-8pb/view"
+          target="_blank"
+        >
+          Click Here To View
+        </a>
+      <div class="about">
+        <h4 style="font-family: 'Roboto', sans-serif;color: white;">About this dataset</h4>
+        <p style="padding-right: 20rem;font-family: 'Roboto', sans-serif;color: white;">
+          The datasets consist of several medical predictor (independent)
+          variables and one target (dependent) variable, 'diabetes'. Independent
+          variables include the number of pregnancies the patient has had, their
+          Pregnancy, Glucose, Blood Pressure, BMI, insulin level, age, and so
+          on.
+        </p>
+        <p>Histogram of the features of this dataset are as follows</p>
+      </div>
+    </div>
+    </div>
+    <div class="hist">
+      <div class="dataset1">
+        <img
+          src="{% static 'images/preg.png' %}"
+          alt="Pregnancy"
+          width="400"
+          height="300"
+        />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span></span>
+        <img
+          src="{% static 'images/gluc.png' %}"
+          alt="Pregnancy"
+          width="400"
+          height="300"
+        />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span></span>
+        <img
+          src="{% static 'images/bp.png' %}"
+          alt="Pregnancy"
+          width="400"
+          height="300"
+        />
+      </div>
+      <div class="dataset2">
+        <img
+          src="{% static 'images/thickness.png' %}"
+          alt="Pregnancy"
+          width="400"
+          height="300"
+        />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span></span>
+        <img
+          src="{% static 'images/insulin.png' %}"
+          alt="Pregnancy"
+          width="400"
+          height="300"
+        />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span></span>
+        <img
+          src="{% static 'images/bmi.png' %}"
+          alt="Pregnancy"
+          width="400"
+          height="300"
+        />
+      </div>
+      <div class="dataset3">
+        <img
+          src="{% static 'images/dpf.png' %}"
+          alt="Pregnancy"
+          width="400"
+          height="300"
+        />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span></span>
+        <img
+          src="{% static 'images/age.png' %}"
+          alt="Pregnancy"
+          width="400"
+          height="300"
+        />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span></span>
+        <!-- <img
+          src="{% static 'images/skin.png' %}"
+          alt="Pregnancy"
+          width="400"
+          height="300"
+        /> -->
+      </div>
+
+    </div>
+      
+    
+  </body>
+</html>
