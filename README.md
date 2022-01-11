@@ -1,1 +1,1 @@
-# Diabetes-Prediction-Using-Machine-Learning
+# Diabetes-Prediction-Using-SVM-and-KNN
